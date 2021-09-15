@@ -1,4 +1,4 @@
-# palette_extraction (C#)
+# Palette Extraction (C#)
 
 A simple implementation of Histogram and Median-Cut algorithms to extract a palette from an image. 🌈
 
