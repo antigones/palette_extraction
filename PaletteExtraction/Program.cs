@@ -14,7 +14,7 @@ namespace PaletteExtraction
         {
             PaletteGenerator PaletteGenerator = new PaletteGenerator();
             PaletteGenerator.InputImage = new Bitmap(@"images\test.gif");
-            List<Color> pcolors = PaletteGenerator.getPaletteWithHistogram();
+            List<Color> pcolors = PaletteGenerator.getPaletteWithHistogram(3);
 
             Console.WriteLine("Palette with getPaletteWithHistogram");
             foreach (Color c in pcolors)

@@ -265,14 +265,14 @@ namespace PaletteExtraction
             return finalColor;
         }
 
-        public List<Color> getPaletteWithHistogram()
+        public List<Color> getPaletteWithHistogram(int nBins)
         {
             List<Color> colorPalette = new List<Color>();
             
             Dictionary<ValueTuple<int, int, int>, List<Color>> bins =
                     new Dictionary<ValueTuple<int, int, int>, List<Color>>();
 
-            int nBins = 3;
+       
             double binLen = 256.0 / nBins;
 
             for (int i = 0; i < nBins; i++)
